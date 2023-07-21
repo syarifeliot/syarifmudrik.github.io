@@ -26,32 +26,29 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i>  Home</a>
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door-fill" class="berbayang"></i>  Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#about" class="berbayang">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#projects" class="berbayang">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Login <i class="bi bi-telephone-forward-fill"></i></a>
+              <a class="nav-link" href="#contact" class="berbayang">Login <i class="bi bi-telephone-forward-fill"></i></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    
-
     <!-- Akhir Navbar -->
 
     <!-- Jumbotron -->
-
     
 
     <section class="jumbotron text-center">
-      <img src="img/gambar.png" alt="Syarif Mudrik" width="200" class="rounded-circle img-thumbnail" />
+      <img src="img/gambar.png" alt="Syarif Mudrik" width="200" class="rounded-circle img-thumbnail berbayang" />
       <style>
         /* Ganti .berbayang dengan kelas yang sesuai dari teks yang ingin diberi bayangan */
         .berbayang {
@@ -59,8 +56,42 @@
         }
       </style>
       <h1 style="color: rgb(93, 93, 214);" style="text-decoration: underline;" class="display-4"><b class="berbayang">Syarif Mudrik Al-Qadrie</b></h1>
-      <p style="color: rgb(1, 51, 4);" class="lead"><i class="bi bi-code-slash"></i>  I am a Web Developer | and Programmer  <i class="bi bi-code-slash"></i></p>
-      <p style="color: rgb(1, 27, 2);" class="lead"><b style="text-decoration: underline;" class="berbayang">Forget to Follow me</p></b>
+      <p style="color: rgb(1, 51, 4);" class="lead"><i class="bi bi-code-slash"></i>  <em>I am a Web Developer | and Programmer</em>  <i class="bi bi-code-slash"></i></p>
+      <html>
+<head>
+    <title>Jam Aktif 24 Jam</title>
+    <style>
+      p {
+          font-size: 120%;
+      }
+  </style>
+</head>
+<body>
+    <p style="color: rgb(10, 143, 18);">Live Time</p>
+    <p id="jam"></p>
+
+    <script>
+        function updateJam() {
+            const now = new Date();
+            const options = { timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone };
+            const jam = now.toLocaleString('en-US', { hour: '2-digit', hour12: false, ...options });
+            const menit = now.toLocaleString('en-US', { minute: '2-digit', ...options });
+            const detik = now.toLocaleString('en-US', { second: '2-digit', ...options });
+
+            const jamAktif = jam + ':' + menit + ':' + detik;
+
+            document.getElementById('jam').textContent = jamAktif;
+        }
+
+        // Memperbarui jam setiap detik
+        setInterval(updateJam, 1000);
+
+        // Memperbarui jam saat halaman pertama kali dimuat
+        updateJam();
+    </script>
+</body>
+</html>
+      <p style="color: rgb(1, 27, 2);" class="lead"><b style="text-decoration: underline;" class="berbayang">Dont Forget to Follow me</p></b>
       <!DOCTYPE html>
       <html>
       <head>
@@ -121,6 +152,11 @@
               <i class="fab fa-telegram"></i> <b style="text-decoration: underline;">Telegram</b>
             </a>
           </li>
+          <li class="nav-item ms-auto mb-3">
+            <a class="nav-link" href="#">
+              <i class="fab fa-whatsapp"></i> <b style="text-decoration: underline;">+62 85754051538</b>
+            </a>
+          </li>
         </ul>
       </body>
       </html>
@@ -144,7 +180,7 @@
       <div class="countaiiner">
         <div class="row text-center mb-3">
           <div class="col">
-            <h2 style="text-decoration: underline;"><b>About Me</b></h2>
+            <h2 style="text-decoration: underline;" class="berbayang"><b>About Me</b></h2>
           </div>
         </div>
       </div>
@@ -167,7 +203,7 @@
   <div class="container">
     <div class="row text-center mb-4">
       <div class="col">
-        <h2 style="text-decoration: underline;" style="color: rgb(194, 43, 106);"><i class="bi bi-cpu" style="color: rgb(4, 4, 83);"></i>  <b>My Project</b>  <i class="bi bi-cpu" style="color: rgb(2, 2, 63);"></i></h2>
+        <h2 style="text-decoration: underline;" style="color: rgb(194, 43, 106);"><i class="bi bi-cpu" style="color: rgb(4, 4, 83);" class="berbayang"></i>  <b class="berbayang">My Project</b>  <i class="bi bi-cpu" style="color: rgb(2, 2, 63);"></i></h2>
       </div>
     </div>
     </div>
@@ -260,16 +296,16 @@
         </div>
         <form name="syarif-contact-froom" onsubmit="return showMessage()">
           <div class="mb-3">
-            <label for="name" class="form-label">Nama Lengkap</label>
+            <label for="name" class="form-label" class="berbayang">Nama Lengkap</label>
             <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
           </div>
           <form name="syarif-contact-froom">
             <div class="mb-3">
-              <label for="email" class="form-label">Email/Gmail <i class="bi bi-envelope-at-fill"></i></label>
+              <label for="email" class="form-label" class="berbayang">Email/Gmail <i class="bi bi-envelope-at-fill"></i></label>
               <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
             </div>
             <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
+              <label for="password" class="form-label" class="berbayang">Password</label>
               <div class="password-container">
                 <input type="password" class="form-control" id="password" name="namaLK" />
                 <div class="toggle-password-container">
@@ -357,7 +393,7 @@
             </script>
         
             <div class="row justify-content-center">
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
                   <strong>TERIMAKASIH!!!!</strong>Pesan anda akan Segera di Kirim.!!!!!!!!!!!
                   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
