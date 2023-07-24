@@ -288,6 +288,7 @@
         <head>
           <title></title>
           <style>
+            
             /* CSS untuk mengatur ukuran gambar menjadi 50% dari lebar kontainer */
             .gambar-container {
               width: 25%;
@@ -302,7 +303,7 @@
         </head>
         <body>
           <div class="gambar-container card-img-top">
-            <img src="img/Project/project10.png" class="card-img-top" alt="Project9" />
+            <img src="img/Project/project14.png" class="card-img-top" alt="Project9" />
           </div>
         </body>
       </div>
@@ -315,16 +316,16 @@
         </div>
         <form name="syarif-contact-froom" onsubmit="return showMessage()">
           <div class="mb-3">
-            <label for="name" class="form-label" class="berbayang">Full Name</label>
+            <label for="name" class="form-label" >Full Name</label>
             <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
           </div>
           <form name="syarif-contact-froom">
             <div class="mb-3">
-              <label for="email" class="form-label" class="berbayang">Email/or phone number <i class="bi bi-envelope-at-fill"></i></label>
+              <label for="email" class="form-label" >Email/or phone number <i class="bi bi-envelope-at-fill"></i></label>
               <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
             </div>
             <div class="mb-3">
-              <label for="password" class="form-label" class="berbayang">Password</label>
+              <label for="password" class="form-label" >Password</label>
               <div class="password-container">
                 <input type="password" class="form-control" id="password" name="namaLK" />
                 <div class="toggle-password-container">
@@ -335,8 +336,13 @@
               </div>
               <div id="notification" class="mt-2"></div>
             </div>
-            
+
             <style>
+              body {
+                background-color: #bbb9b9; /* Ganti kode warna latar belakang dengan abu-abu terang */
+    /* tambahkan atribut lain sesuai kebutuhan */
+              }
+
               .password-container {
                 position: relative;
               }
@@ -367,7 +373,7 @@
               }
             
               #notification {
-                color: rgb(33, 179, 13);
+                color: rgb(26, 63, 228);
                 font-weight: bold;
               }
   
@@ -378,7 +384,7 @@
                 z-index: 9999;
               }
             </style>
-            
+
             <script>
               const togglePassword = document.querySelector('.toggle-password');
               const passwordInput = document.querySelector('#password');
@@ -412,7 +418,7 @@
             </script>
         
             <div class="row justify-content-center">
-              <div class="col-md-4">
+              <div class="col-md-2">
                 <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
                   <strong>TERIMAKASIH!!!!</strong>Pesan anda akan Segera di Kirim.!!!!!!!!!!!
                   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
