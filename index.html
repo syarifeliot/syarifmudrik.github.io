@@ -55,7 +55,7 @@
           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Properti text-shadow: offsetX offsetY blurRadius color; */
         }
       </style>
-      <h1 style="color: rgb(93, 93, 214);" style="text-decoration: underline;" class="display-4"><b class="berbayang">Syarif Mudrik Al-Qadrie</b></h1>
+      <h1 style="color: rgb(93, 93, 214);" style="text-decoration: underline;" class="display-4"><b>Syarif Mudrik Al-Qadrie</b></h1>
       <p style="color: rgb(1, 51, 4);" class="lead"><i class="bi bi-code-slash"></i>  <em>I am a Web Developer | and Programmer</em>  <i class="bi bi-code-slash"></i></p>
       <html>
 <head>
@@ -285,23 +285,42 @@
   <div class="container">
     <div class="row text-center mb-3">
       <div class="col">
-<h2 class="berbayang" style="color: blue;"><b>Login/Gmail/Contact Now</b></h2>
+        <head>
+          <title></title>
+          <style>
+            /* CSS untuk mengatur ukuran gambar menjadi 50% dari lebar kontainer */
+            .gambar-container {
+              width: 25%;
+              margin:  auto; /* Mengatur gambar menjadi terpusat secara horizontal */
+      text-align: center; /* Mengatur gambar menjadi terpusat secara vertikal */
+            }
+      /* Mengatur ukuran tinggi gambar menjadi 50% dari tinggi kontainer */
+    .gambar-container img {
+      height: 1%;
+    }
+          </style>
+        </head>
+        <body>
+          <div class="gambar-container card-img-top">
+            <img src="img/Project/project10.png" class="card-img-top" alt="Project9" />
+          </div>
+        </body>
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-md-6">
+      <div class="col-md-3">
         <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-          <strong>TERIMAKASIH!!!!</strong> Pesan anda akan Segera di Kirim.!!!!!!!!!!!
+          <strong>TERIMAKASIH</strong>Pesan anda akan Segera di Kirim.......!
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         <form name="syarif-contact-froom" onsubmit="return showMessage()">
           <div class="mb-3">
-            <label for="name" class="form-label" class="berbayang">Nama Lengkap</label>
+            <label for="name" class="form-label" class="berbayang">Full Name</label>
             <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
           </div>
           <form name="syarif-contact-froom">
             <div class="mb-3">
-              <label for="email" class="form-label" class="berbayang">Email/Gmail <i class="bi bi-envelope-at-fill"></i></label>
+              <label for="email" class="form-label" class="berbayang">Email/or phone number <i class="bi bi-envelope-at-fill"></i></label>
               <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
             </div>
             <div class="mb-3">
@@ -348,10 +367,10 @@
               }
             
               #notification {
-                color: rgb(50, 20, 216);
+                color: rgb(33, 179, 13);
                 font-weight: bold;
               }
-        
+  
               .my-alert {
                 position: fixed;
                 top: 20px;
@@ -376,7 +395,7 @@
             
               passwordInput.addEventListener('keyup', function () {
                 if (this.value.length > 0) {
-                  notification.textContent = 'Perlu Diingat! Masukkan password Anda dengan benar.';
+                  notification.textContent = 'Pastikan Password anda Benar!.';
                 } else {
                   notification.textContent = '';
                 }
@@ -386,7 +405,7 @@
                 const alert = document.querySelector('.my-alert');
                 alert.classList.remove('d-none');
                 alert.classList.add('show');
-                notification.textContent = 'Proses Mengirim.......! ';
+                notification.textContent = 'Proses Mengirim.......!';
                 return false; // prevent form submission
               }
     
@@ -401,11 +420,11 @@
               </div>
             </div>
             
-            <div class="mb-3 text-center">
-              <label for="pesan" class="form-label"><b>Tinggalkan Pesan di bawah sini / Atau komentar Pendapat Anda.</b><i class="bi bi-envelope-at-fill"></i></label>
-              <textarea class="form-control" id="pesan" rows="6" name="pesan" style="width: 100%; margin: 0 auto;"></textarea>
+            <div class="mb-4 text-center">
+              <label for="pesan" class="form-label">Leave Your Comments.</label>
+            <textarea class="form-control" id="pesan" rows="2" name="pesan" style="width: 120%; margin: 3 auto;"></textarea>
             </div>                
-            <button type="submit" class="btn btn-primary btn-kirim text-center" style="width: 50%;"><b class="berbayang">Login</b></button>
+            <button type="submit" class="btn btn-primary btn-kirim text-center" style="width: 30%;"><b class="berbayang">Login</b></button>
             <button class="btn btn-primary btn-loading d-none" type="button" disabled style="width: 50%;">
               <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
               Loading...
